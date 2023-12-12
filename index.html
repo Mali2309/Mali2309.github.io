@@ -9,7 +9,20 @@
   </head>
   <body>
     <h1>Wordle PPY</h1>
-    <input type="text" id="guess-input" />
+    <div id="contenedor">
+      <div id="titulo">Instrucciones</div>
+      <ul id="reglas">
+        <li>Adivina la palabra de 5 letras</li>
+        <li>Tienes 6 intentos</li>
+        <li>Las letras incorrectas aparecen en rojo ❌</li>
+        <li>
+          Las letras correctas pero en el lugar incorrecto aparecen en amarillo
+          ⚠
+        </li>
+        <li>Las letras correctas aparecen en verde ✔</li>
+      </ul>
+    </div>
+    <input type="text" id="guess-input" placeholder="Escribe una palabra" />
     <button id="guess-button">Intentar</button>
     <div id="grid">
       <div class="row">
@@ -20,6 +33,7 @@
         <span class="letter"> </span>
       </div>
     </div>
+
     <p id="guesses"></p>
   </body>
 </html>
