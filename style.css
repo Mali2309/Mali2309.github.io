@@ -48,3 +48,19 @@ button:active {
 .input-area {
   margin: 30px;
 }
+#reglas {
+  font-family: "Courier New", Courier, monospace;
+  text-align: center;
+  font-size: 15px;
+  padding: 0;
+}
+#titulo {
+  font-family: "Courier New", Courier, monospace;
+  text-align: center;
+  text-decoration: underline;
+  font-size: 20px;
+}
+#contenedor {
+  background-color: #044646;
+  color: beige;
+}
