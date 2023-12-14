@@ -10,7 +10,15 @@ let diccionario = [
   "AMIGO",
   "DIETA",
 ];
-const palabra = diccionario[Math.floor(Math.random() * diccionario.length)];
+let palabra = diccionario[Math.floor(Math.random() * diccionario.length)];
+const API = "https://random-word-api.herokuapp.com/word?length=5";
+fetch(API).then((response) => {
+  response.json().then((data) => {
+    console.log(data[0]);
+    palabra = data[0].toUpperCase();
+  });
+});
+
 const input = document.getElementById("guess-input");
 const valor = input.value;
 const GRID = document.getElementById("grid");
